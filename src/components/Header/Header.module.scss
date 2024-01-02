@@ -1,0 +1,29 @@
+.headerStyles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #d3adad;
+  color: #000;
+}
+.logoContainerStyles {
+  flex: 1;
+}
+.loginContainerStyles {
+  margin-left: 20px;
+}
+.logoutLink {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.loginButtonStyles {
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.logoStyles {
+  height: auto;
+}

@@ -1,0 +1,68 @@
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+.loginForm {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  background-color: #fefefe;
+  padding: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.loginText {
+  width: 100%;
+  color: black;
+  border-bottom: 2px solid white;
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  margin: 8px 0 
+}
+
+.formBox {
+  display: block;
+  width: 75%;
+  margin: 12px auto;
+}
+
+.loginBtn {
+  border: 1px solid black;
+  padding: 8px 40px;
+  font-weight: 700;
+  border-radius: 100px;
+  margin: 0 0 10px 
+}
+
+.show {
+  display: block;
+  transition: 800ms;
+  opacity: 1;
+}
+
+.show.active {
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+}
+
+.formBox {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.cancelBtn{
+    margin-left: 6px;
+}
