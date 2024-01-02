@@ -62,7 +62,7 @@ const Header = ({ toggle }) => {
           />
         </Link>
       </div>
-      <Link href={"/products/category-1"}>category-1</Link>
+      <Link href={"/collections/featured-collection"}>collection-1</Link>
       {isAuth ? (
         <>
           <p className={styles.loginContainerStyles}>{greetingsText}</p>
