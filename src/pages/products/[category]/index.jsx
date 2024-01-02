@@ -25,7 +25,7 @@ const CategoryPage = ({ products = [] }) => {
               return (
                 <Link
                   key={item.id}
-                  href={`products/${item.handle}`}
+                  href={`product/${item.handle}`}
                   className="group"
                   prefetch={true}
                 >
