@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 
 import { setAccessToken } from "@/features/user/userSlice";
 import styles from "./LoginForm.module.scss";
@@ -9,20 +9,20 @@ const LoginForm = ({ onLogin, toggle }) => {
   const [password, setPassword] = useState("5hopify");
   const dispatch = useDispatch();
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-
   const login = () => {
-    getAccessToken({username, password});
+    getAccessToken({ username, password });
   };
 
   const getAccessToken = async (data) => {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    console.log("----baseUrl----", baseUrl);
     const response = await fetch(`${baseUrl}api/getAccessToken`, {
       method: "POST",
       body: JSON.stringify(data),
     });
     const token = await response.json();
-    dispatch(setAccessToken(token?.data?.customerAccessTokenCreate ||{}))
-    onLogin()
+    dispatch(setAccessToken(token?.data?.customerAccessTokenCreate || {}));
+    onLogin();
   };
 
   return (
@@ -37,7 +37,9 @@ const LoginForm = ({ onLogin, toggle }) => {
               placeholder="User Name"
               className={styles.formBox}
               value={username}
-              onChange={(event)=>{setUserName(event.target.value)}}
+              onChange={(event) => {
+                setUserName(event.target.value);
+              }}
             />
             <input
               type="password"
@@ -45,12 +47,17 @@ const LoginForm = ({ onLogin, toggle }) => {
               className={styles.formBox}
               placeholder="password"
               value={password}
-              onChange={(event)=>{setPassword(event.target.value)}}
-
+              onChange={(event) => {
+                setPassword(event.target.value);
+              }}
             />
             <br></br>
             <div className={styles.footer}>
-              <button onClick={()=>login()} type="button" className={styles.loginBtn}>
+              <button
+                onClick={() => login()}
+                type="button"
+                className={styles.loginBtn}
+              >
                 Login
               </button>
               <button

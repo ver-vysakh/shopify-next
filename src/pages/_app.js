@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }) {
   useEffect(()=>{
     initApp()
   }, [])
+  
   const handleLoginClick = () => {
     setIsShowLogin(!isShowLogin)
   };
