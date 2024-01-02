@@ -1,8 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/products/:path*",
-        "destination": "https://vysakh-manayath.myshopify.com/products/:path*"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/products/:path*",
+      "destination": "https://vysakh-manayath.myshopify.com/products/:path*"
+    }
+  ]
+}
