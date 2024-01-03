@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/products/:path*",
-      "destination": "https://vysakh-manayath.myshopify.com/products/:path*"
+      "destination": "https://vysakh-manayath.myshopify.com/:path*"
     }
   ]
 }
