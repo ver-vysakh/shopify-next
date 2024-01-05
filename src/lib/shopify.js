@@ -25,3 +25,5 @@ export default async function ShopifyData(query = "", variables = {}) {
     throw new Error("Products not fetched");
   }
 }
+
+

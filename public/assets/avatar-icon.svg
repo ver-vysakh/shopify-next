@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_318" data-name="Group 318" transform="translate(-3 -3.015)">
+    <path id="Vector" d="M30,15A15,15,0,1,1,15,0,15,15,0,0,1,30,15Z" transform="translate(3 3.015)" opacity="0.08"/>
+    <path id="Vector-2" data-name="Vector" d="M5.625,0A5.618,5.618,0,0,0,5.55,11.235h.27A5.619,5.619,0,0,0,5.625,0Z" transform="translate(12.375 10.41)" fill="#959595"/>
+    <path id="Vector-3" data-name="Vector" d="M20.34,5.618A14.963,14.963,0,0,1,10.17,9.593,14.963,14.963,0,0,1,0,5.618a6.412,6.412,0,0,1,2.76-3.57,14.432,14.432,0,0,1,14.82,0A6.347,6.347,0,0,1,20.34,5.618Z" transform="translate(7.83 23.422)" fill="#959595"/>
+  </g>
+</svg>

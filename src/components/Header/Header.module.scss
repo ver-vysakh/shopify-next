@@ -1,16 +1,185 @@
+// .headerWrapper {
+//   :global {
+//     .cstmAppBar {
+//       position: fixed;
+//       background-color: #f0f1f2;
+//       color: #707070;
+//       box-shadow: none;
+//       // z-index: 1200;
+//       height: 64px;
+
+//       .cstmToolBar {
+//         display: flex;
+//         justify-content: space-between;
+//         .sides {
+//           display: flex;
+//           align-items: center;
+//           .logo-image{
+//             width: 70px;
+//             height: 40px;
+//           }
+//         }
+//         .storeContainer {
+//           margin-right: 30px;
+//           @media screen and (max-width: 991px) {
+//             margin-right: 10px;
+//           }
+//         }
+//       }
+
+//       .searchBox {
+//         position: relative;
+//         background-color: #fff;
+//         margin-left: 15px;
+//         width: 300px;
+//         height: 37px;
+//         @media screen and (max-width: 991px) {
+//           margin-left: 5px;
+//           width: 230px;
+//         }
+//         @media screen and (max-width: 600px) {
+//           margin-left: 0;
+//         }
+
+//         .barcode-icon {
+//           position: absolute;
+//           right: 0;
+//           top: 0;
+//           height: 100%;
+//           display: flex;
+//           align-items: center;
+//         }
+
+//         .searchBoxWrapper {
+//           padding: 0 10px;
+//           height: 100%;
+//           position: absolute;
+//           pointer-events: none;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//         }
+
+//         .cstmInputBase {
+//           color: inherit;
+
+//           .cstmInputBaseInput {
+//             padding: 7px 0px 7px 40px;
+//             width: 100%;
+//           }
+//         }
+//       }
+//       .storeInfo {
+//         display: flex;
+//         align-items: center;
+//         .icon {
+//             width: 36px;
+//             height: 36px;
+//             border-radius: 100%;
+//             background-color: #dddedf;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+//         .content {
+//             padding-left: 10px;
+//             display: flex;
+//             flex-direction: column;
+//             font-size: 13px;
+//             color: #000;
+//             line-height: 16px;
+//             .title {
+//                 color: #000;
+//                 line-height: 18px;
+//                 font-size: inherit;
+//             }
+//             p {
+//                 margin: 0;
+//                 font-size: inherit;
+//             }
+//         }
+//     }
+
+//     @media screen and (max-width: 599px) {
+//         .storeInfo {
+//             padding: 5px 16px;
+//             width: 100%;
+//             .icon {
+//                 width: 30px;
+//                 height: 30px;
+//             }
+//             .content {
+//                 display: flex;
+//                 flex-direction: row;
+//                 .title {
+//                     margin-right: 5px;
+//                 }
+//             }
+//         }
+//     }
+//     }
+
+//     .userMenu {
+//       border-radius: 0;
+//       box-shadow: none;
+//       border: 1px solid #ebebeb;
+//       .listItem {
+//         min-height: 40px;
+//         .item {
+//           font-size: 14px;
+//           color: #000;
+//         }
+//       }
+//     }
+
+//     .avatarText {
+//       background-color: #000;
+//       width: 30px;
+//       height: 30px;
+//       color: #fff;
+//       font-size: 12px;
+//       border-radius: 50%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//     }
+
+//     .scannerContainer {
+//       position: absolute;
+//       top: 0;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       margin: auto;
+//       max-width: 1280px;
+//       max-height: 80%;
+//     }
+//   }
+// }
+
 .headerStyles {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: #d3adad;
+  background: #fff;
   color: #000;
+  border-bottom: 2px solid #000;
 }
 .logoContainerStyles {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 230px;
+  .collection{
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+  }
 }
 .loginContainerStyles {
   margin-left: 20px;
+  font-weight: 500;
 }
 .logoutLink {
   margin-left: 20px;
